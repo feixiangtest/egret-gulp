@@ -44,23 +44,9 @@ var Main = /** @class */ (function (_super) {
         return _this;
     }
     Main.prototype.onAddToStage = function (event) {
-        var _myGrid = new egret.Shape();
-        _myGrid.graphics.beginFill(0x0000ff);
-        _myGrid.graphics.drawRect(0, 0, 50, 50);
-        _myGrid.graphics.endFill();
-        _myGrid.graphics.beginFill(0x0000ff);
-        _myGrid.graphics.drawRect(50, 50, 50, 50);
-        _myGrid.graphics.endFill();
-        _myGrid.graphics.beginFill(0xff0000);
-        _myGrid.graphics.drawRect(50, 0, 50, 50);
-        _myGrid.graphics.endFill();
-        _myGrid.graphics.beginFill(0xff0000);
-        _myGrid.graphics.drawRect(0, 50, 50, 50);
-        _myGrid.graphics.endFill();
-        this.addChild(_myGrid);
-        console.log(3336699);
-        // var _myGrid:MyGrid = new MyGrid();
-        // this.addChild( _myGrid );
+        console.log(333);
+        var _myGrid = new MyGrid();
+        //  this.addChild( _myGrid );
     };
     return Main;
 }(egret.DisplayObjectContainer));

@@ -1,3 +1,6 @@
+module shapes{
+    
+
 class MyGrid extends egret.Shape{
     public constructor(){
         super();
@@ -17,4 +20,5 @@ class MyGrid extends egret.Shape{
         this.graphics.drawRect( 0, 50, 50,50 );
         this.graphics.endFill();               
     }
+}
 }

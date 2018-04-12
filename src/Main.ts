@@ -34,27 +34,12 @@ class Main extends egret.DisplayObjectContainer{
         this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this);
     }
     private onAddToStage(event:egret.Event){
-      let  _myGrid:egret.Shape = new egret.Shape();
-      _myGrid.graphics.beginFill( 0x0000ff );
-      _myGrid.graphics.drawRect( 0, 0, 50,50 );
-      _myGrid.graphics.endFill();
-      _myGrid.graphics.beginFill( 0x0000ff );
-      _myGrid.graphics.drawRect( 50, 50, 50, 50);
-      _myGrid.graphics.endFill();
-      _myGrid.graphics.beginFill( 0xff0000 );
-      _myGrid.graphics.drawRect( 50, 0, 50,50 );
-      _myGrid.graphics.endFill();
-      _myGrid.graphics.beginFill( 0xff0000 );
-      _myGrid.graphics.drawRect( 0, 50, 50,50 );
-      _myGrid.graphics.endFill();               
-
-        this.addChild(_myGrid);
-
-        console.log(3336699)
+      
+        console.log(333);
 
 
-        // var _myGrid:MyGrid = new MyGrid();
-        // this.addChild( _myGrid );
+         var _myGrid:MyGrid = new MyGrid();
+        //  this.addChild( _myGrid );
     }
 }
 
