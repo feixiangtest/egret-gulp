@@ -8,15 +8,15 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var MyGrid = /** @class */ (function (_super) {
-    __extends(MyGrid, _super);
-    function MyGrid() {
+var MyGrid2 = /** @class */ (function (_super) {
+    __extends(MyGrid2, _super);
+    function MyGrid2() {
         var _this = _super.call(this) || this;
         _this.drawGrid();
         return _this;
     }
-    MyGrid.prototype.drawGrid = function () {
-        this.graphics.beginFill(0x0000ff);
+    MyGrid2.prototype.drawGrid = function () {
+        this.graphics.beginFill(0x00ffff);
         this.graphics.drawRect(0, 0, 50, 50);
         this.graphics.endFill();
         this.graphics.beginFill(0x0000ff);
@@ -29,5 +29,5 @@ var MyGrid = /** @class */ (function (_super) {
         this.graphics.drawRect(0, 50, 50, 50);
         this.graphics.endFill();
     };
-    return MyGrid;
+    return MyGrid2;
 }(egret.Shape));

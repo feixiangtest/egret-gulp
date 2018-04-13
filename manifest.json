@@ -8,8 +8,11 @@
 		"promise/bin/promise.js"
 	],
 	"game": [
+		
+		"bin-debug/ChildrenObject.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
-		"bin-debug/MyGrid.js"
+		"bin-debug/Shapes/MyGrid.js",
+		"bin-debug/Floor/Floor1.js"
 	]
 }

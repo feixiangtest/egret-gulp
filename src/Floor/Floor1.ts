@@ -1,5 +1,4 @@
-
-class MyGrid extends egret.Shape{
+class Floor1 extends egret.Shape{
     public constructor(){
         super();
         this.drawGrid();

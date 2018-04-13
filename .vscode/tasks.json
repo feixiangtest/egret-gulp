@@ -1,44 +1,10 @@
-// {
-//     "version": "2.0.0",
-//     "tasks": [
-//       {
-//         "label": "compile",
-//         "command": "gulp",
-//         "type": "shell"
-//       }
-//     ]
-//   }
-
 {
-  "version": "0.1.0",
-  "command": "egret",
-  "isShellCommand": true,
-  "tasks": [
+    "version": "2.0.0",
+    "tasks": [
       {
-          "taskName": "build",
-          "showOutput": "always",
-          "args": [
-              "build",
-              "-sourcemap"
-          ],
-          "problemMatcher": "$tsc"
-      },
-      {
-          "taskName": "clean",
-          "showOutput": "always",
-          "args": [
-              "build",
-              "-e"
-          ],
-          "problemMatcher": "$tsc"
-      },
-      {
-          "taskName": "publish",
-          "showOutput": "always",
-          "args": [
-              "publish"
-          ],
-          "problemMatcher": "$tsc"
+        "label": "compile",
+        "command": "gulp",
+        "type": "shell"
       }
-  ]
-}
+    ]
+  }
