@@ -1,7 +1,26 @@
-var manifest = JSON.parse(egret_native.readFileSync("manifest.json"));
-var game_file_list = manifest.initial.concat(manifest.game);
 
-var window = this;
+var game_file_list = [
+    //以下为自动修改，请勿修改
+    //----auto game_file_list start----
+	"libs/modules/egret/egret.js",
+	"libs/modules/egret/egret.native.js",
+	"libs/modules/res/res.js",
+	"libs/modules/tween/tween.js",
+	"libs/modules/eui/eui.js",
+	"bin-debug/AssetAdapter.js",
+	"bin-debug/LoadingUI.js",
+	"bin-debug/Main.js",
+	"bin-debug/ThemeAdapter.js",
+	"bin-debug/fighter/Airplane.js",
+	"bin-debug/fighter/BgMap.js",
+	"bin-debug/fighter/Bullet.js",
+	"bin-debug/fighter/GameContainer.js",
+	"bin-debug/fighter/ScorePanel.js",
+	"bin-debug/utils/GameUtil.js",
+	//----auto game_file_list end----
+];
+
+var window = {};
 
 egret_native.setSearchPaths([""]);
 
@@ -13,14 +32,9 @@ egret_native.requireFiles = function () {
 };
 
 egret_native.egretInit = function () {
-    if(egret_native.featureEnable) {
-        //控制一些优化方案是否开启
-        //Control whether some optimization options are open
-        var result = egret_native.featureEnable({
-            
-        });
-    }
     egret_native.requireFiles();
+    egret.TextField.default_fontFamily = "/system/fonts/DroidSansFallback.ttf";
+    //egret.dom为空实现
     egret.dom = {};
     egret.dom.drawAsCanvas = function () {
     };
@@ -29,17 +43,16 @@ egret_native.egretInit = function () {
 egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
-        //The following is automatically modified, please do not modify
         //----auto option start----
 		entryClassName: "Main",
-		frameRate: 30,
+		frameRate: 60,
 		scaleMode: "showAll",
-		contentWidth: 640,
-		contentHeight: 1136,
+		contentWidth: 480,
+		contentHeight: 800,
 		showPaintRect: false,
 		showFPS: false,
-		fpsStyles: "x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9",
-		showLog: false,
+		fpsStyles: "x:0,y:0,size:30,textColor:0x00c200,bgAlpha:0.9",
+		showLog: true,
 		logFilter: "",
 		maxTouches: 2,
 		textureScaleFactor: 1
@@ -48,6 +61,6 @@ egret_native.egretStart = function () {
 
     egret.native.NativePlayer.option = option;
     egret.runEgret();
-    egret_native.Label.createLabel("/system/fonts/DroidSansFallback.ttf", 20, "", 0);
+    egret_native.Label.createLabel(egret.TextField.default_fontFamily, 20, "", 0);
     egret_native.EGTView.preSetOffScreenBufferEnable(true);
 };

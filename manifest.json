@@ -2,17 +2,27 @@
 	"initial": [
 		"libs/modules/egret/egret.js",
 		"libs/modules/egret/egret.web.js",
-		"libs/modules/game/game.js",
-		"libs/modules/tween/tween.js",
 		"libs/modules/res/res.js",
-		"promise/bin/promise.js"
+		"libs/modules/tween/tween.js",
+		"libs/modules/eui/eui.js"
 	],
 	"game": [
-		
-		"bin-debug/ChildrenObject.js",
+		"bin-debug/fighter/Bullet.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
-		"bin-debug/Shapes/MyGrid.js",
-		"bin-debug/Floor/Floor1.js"
+		"bin-debug/MyGrid.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/fighter/Airplane.js",
+		"bin-debug/fighter/BgMap.js",
+		"bin-debug/BgMap.js",
+		"bin-debug/fighter/GameContainer.js",
+		"bin-debug/fighter/ScorePanel.js",
+		"bin-debug/Model/Bullet.js",
+		"bin-debug/Model/Plane.js",
+		"bin-debug/Model/Resources.js",
+		"bin-debug/Plane/Blueplane.js",
+		"bin-debug/Plane/Enemyplane.js",
+		"bin-debug/utils/GameUtil.js"
 	]
 }
